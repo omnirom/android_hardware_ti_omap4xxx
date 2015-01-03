@@ -1,3 +1,5 @@
+ifndef BOARD_USE_CUSTOM_HWC
+
 # HWC under heavy development and should not be included in builds for now
 LOCAL_PATH := $(call my-dir)
 
@@ -24,3 +26,5 @@ endif
 # LOG_NDEBUG=0 means verbose logging enabled
 # LOCAL_CFLAGS += -DLOG_NDEBUG=0
 include $(BUILD_SHARED_LIBRARY)
+
+endif
